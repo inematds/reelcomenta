@@ -1,0 +1,33 @@
+# reelcomenta — edição 2026-10-09-robo-trabalho (exemplo: o primeiro vídeo feito neste formato)
+link: https://www.instagram.com/reel/DeQ62SgBblE/
+data: "09/10/2026"
+lento: {de: 6, ate: 17}
+fala: |
+  Olha isso. O robô já divide o palco com a dançarina. E não é só dança. O Fórum Econômico Mundial calcula noventa e dois milhões de empregos eliminados até dois mil e trinta. Quarenta e um por cento das empresas dizem que vão cortar vagas por causa da inteligência artificial. E a Gartner prevê que uma em cada cinco empresas vai usar IA para eliminar mais da metade da gerência média. Só em dois mil e vinte e quatro, as fábricas instalaram quinhentos e quarenta e dois mil robôs. Agora eu te pergunto: tu acha que eles não vão ter capacidade de substituir o teu trabalho? E aí? Tu vai ficar esperando, ou vai se qualificar? No inema ponto club tem mais de trezentos cursos gratuitos de inteligência artificial. Começa hoje.
+abertura: {linha1: "O ROBÔ JÁ", linha2: "SUBIU NO PALCO", cor: ambar}
+painel_inicial: {titulo: "IA + ROBÔS", texto: "o que os números\ndizem sobre o\nteu emprego"}
+manchete_numeros: {linha1: "E NÃO É SÓ", linha2: "DANÇA", cor: vermelho}
+cartoes:
+  - {ancora: noventa, numero: "{} MILHÕES", conta: 92, rotulo: "de empregos eliminados\naté 2030", fonte: "Fórum Econômico Mundial · 2025", cor: vermelho}
+  - {ancora: quarenta, numero: "{}%", conta: 41, rotulo: "das empresas vão cortar\nvagas por causa da IA", fonte: "Fórum Econômico Mundial · 2025", cor: vermelho}
+  - {ancora: gartner, numero: "1 EM 5", rotulo: "empresas vai usar IA\npara cortar metade\nda gerência média", fonte: "Gartner · previsão para 2026", cor: ambar}
+  - {ancora: quinhentos, numero: "{} MIL", conta: 542, rotulo: "robôs instalados nas\nfábricas só em 2024", fonte: "IFR · World Robotics 2025", cor: vermelho}
+pergunta:
+  ancora: pergunto
+  linha1: "E O SEU"
+  linha2: "TRABALHO?"
+  riscado: "ESPERAR"
+  virada: qualific
+  depois: ["OU SE", "QUALIFICAR"]
+cta:
+  ancora: inema
+  linha1: "+{cursos_100} CURSOS"
+  linha2: "GRATUITOS"
+  painel: "INEMA.CLUB"
+  texto: "+{cursos_100} cursos de IA\n100% gratuitos\ndo zero ao avançado"
+final: ["INEMA.CLUB", "cursos gratuitos de IA", "começa hoje"]
+legenda_envio: "ROBÔ NO PALCO → TEU TRABALHO (avatar Nei). Números: Fórum Econômico Mundial, Gartner, IFR."
+# fontes conferidas em 09/10/2026:
+#  WEF Future of Jobs 2025 — 170 mi criados, 92 mi eliminados até 2030; 41% esperam cortes por IA
+#  Gartner (out/2024) — até 2026, 20% das organizações usarão IA para eliminar mais da metade da gerência média
+#  IFR World Robotics 2025 — 542 mil robôs industriais instalados em 2024 (o dobro de 10 anos antes)
