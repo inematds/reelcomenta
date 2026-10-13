@@ -462,7 +462,10 @@ def cmd_avatar(pasta):
             subprocess.run(["node", "heygen-studio.mjs", "--titulo", titulo, "--fala-arquivo", fala, "--perfil", CFG["perfil_heygen"],
                             "--template", CFG["template_heygen"]], cwd=CFG["explicavideos"] / "engine", env=env,
                            stdout=lg, stderr=subprocess.STDOUT, timeout=900)
-        m = re.search(r"create-v4/([0-9a-f]{32})", (av / "studio.log").read_text())
+        slog = (av / "studio.log").read_text()
+        if "ERRO:" in slog:  # rascunho criado mas não enviado: o id ficaria 'pending' para sempre (12/10)
+            sys.exit("estúdio não enviou o vídeo: " + slog[slog.index("ERRO:"):][:200])
+        m = re.search(r"create-v4/([0-9a-f]{32})", slog)
         if not m:
             sys.exit("estúdio não devolveu o id do vídeo; veja avatar/studio.log")
         vid_f.write_text(m.group(1))
